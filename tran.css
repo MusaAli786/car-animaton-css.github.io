@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    background-image: url(./danga.jpg);
+    width: 100vw;
+    height: 85vh;
+    /* background-repeat: no-repeat; */
+    /* background-size: auto; */
+    animation: musaali 1s infinite linear;
+}
+
+.bike{
+    width: 200px;
+    position: absolute;
+    bottom: 210px;
+    left: 400px;
+}
+.car{
+    width: 200px;
+    position: absolute;
+    bottom: 220px;
+    left: 800px;
+}
+.secondcar{
+    width: 220px;
+    position: absolute;
+    bottom: 160px;
+    left: 50px;
+    animation: carrase 10s infinite linear;
+}
+@keyframes musaali{
+    100%{
+        background-position: bottom left;
+    }
+    0%{
+        background-position: bottom right;
+    }
+}
+@keyframes carrase{
+    0%{
+        
+        bottom: 150px;
+     }
+    30%{
+       translate: 250px;
+       bottom: 150px;
+    }
+    40%{
+        translate: 500px;
+        bottom: 150px;
+     }
+     60%{
+        translate: 500px;
+        bottom: 140px;
+     }
+     60%{
+        translate: 700px;
+        bottom: 120px;
+     }
+    90%{
+        translate: 800px;
+        bottom: 140px;
+    }
+    100%{
+        translate: 1000px;
+        bottom: 140px;
+    }
+
+   
+}
